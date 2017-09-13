@@ -1,0 +1,8 @@
+[options]
+allow_bold = true
+browser = firefox
+clickable_url = true
+font = Noto Mono Bold Italic 10
+
+[colors]
+background = rgba(18, 18, 18, 0.5)

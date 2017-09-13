@@ -1,0 +1,8 @@
+#!/bin/sh
+
+
+
+array=(`ls ~/.Background/day/.`)
+#echo ${array[$(expr $RANDOM % ${#array[@]})]}
+#feh  --bg-scale '/home/rene_r/.Background/day/tokyoStreet.jpg'
+feh  --bg-scale ${HOME}"/.Background/day/"${array[$(expr $RANDOM % ${#array[@]})]}

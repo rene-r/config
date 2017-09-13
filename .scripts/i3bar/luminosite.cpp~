@@ -1,0 +1,9 @@
+#include <iostream>
+
+int main()
+{
+  int lux = 0;
+  system("ls -la");
+  std::cout<<"test\n";
+  return (lux);
+}

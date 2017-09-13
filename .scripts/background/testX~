@@ -1,0 +1,14 @@
+#!/bin/bash
+
+h=100
+
+# Get width
+w=`convert /home/rene_r/.Background/simple.png -format "%w" info:`
+
+# Create gradient
+convert -size ${w}x$h gradient:black-none alpha_grad_src.png
+
+# Crop and apply gradient
+convert  /home/rene_r/.Background/simple.png -crop ${w}x${h}+0+0 \
+alpha_grad_src.png -compose CopyOpacity -composite \
+output.png
